@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+ENV TZ=Europe/Moscow
 RUN apt update
 RUN apt install -y git
 RUN apt install -y tomcat9
