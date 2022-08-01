@@ -12,7 +12,7 @@ RUN ls -l
 RUN mvn package
 EXPOSE 8080
 WORKDIR /boxfuse-sample-java-war-hello/target/
-WORKDIR /usr/local/
+WORKDIR /var/lib/
 RUN ls -l
 RUN cp hello-1.0.war /usr/local/tomcat/webapps/
 CMD ["catalina.sh" "run"]
