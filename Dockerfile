@@ -14,7 +14,8 @@ WORKDIR /boxfuse-sample-java-war-hello/target/
 RUN cp hello-1.0.war /var/lib/tomcat9/webapps/
 EXPOSE 8080
 WORKDIR /usr/share/tomcat9/bin/
-CMD ["catalina.sh" "run"]
+
+CMD ["/usr/share/tomcat/bin/catalina.sh" "run"]
 
 
 
