@@ -1,5 +1,4 @@
 FROM ubuntu:20.04
-RUN sudo su
 RUN apt update
 RUN apt install -y git
 RUN apt install -y tomcat9
