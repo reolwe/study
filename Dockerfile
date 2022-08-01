@@ -19,7 +19,7 @@ RUN cp hello-1.0.war /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD /usr/local/tomcat/bin/catalina.sh run
 
-№WORKDIR /usr/share/tomcat9/bin/
+#WORKDIR /usr/share/tomcat9/bin/
 
 CMD ["/usr/share/tomcat/bin/catalina.sh" "run"]
 
