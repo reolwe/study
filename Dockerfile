@@ -10,9 +10,9 @@ RUN apt install -y maven
 WORKDIR /boxfuse-sample-java-war-hello/
 RUN ls -l
 RUN mvn package
-EXPOSE 8080
 WORKDIR /boxfuse-sample-java-war-hello/target/
 RUN cp hello-1.0.war /var/lib/tomcat9/webapps/
+EXPOSE 8080
 CMD ["catalina.sh" "run"]
 
 
