@@ -7,7 +7,7 @@ RUN apt install -y tomcat9
 RUN apt install -y default-jdk
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN apt install -y maven
-RUN cd boxfuse-sample-java-war-hello/
+RUN cd /boxfuse-sample-java-war-hello/
 RUN ls -l
 RUN mvn package
 EXPOSE 8080
