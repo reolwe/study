@@ -22,7 +22,8 @@ CMD /usr/local/tomcat/bin/catalina.sh run
 
 #WORKDIR /usr/share/tomcat9/bin/
 
-CMD ["/usr/share/tomcat/bin/catalina.sh" "run"]
+#CMD ["/usr/share/tomcat/bin/catalina.sh" "run"]
+CMD /usr/local/tomcat/bin/catalina.sh run
 
 
 
